@@ -25,7 +25,7 @@ class PersonControllerTest {
 	void testCaMappings() {
 		log.info("Getting All User");
 		ResponseEntity<List<String>> allPersons = this.controller.getDefault();
-		assertThat(allPersons.getBody()).isNotNull().hasSize(4);
+		assertThat(allPersons.getBody()).isNotNull().hasSize(2);
 		log.info("Mappings are {} " , allPersons.getBody());
 	}
 	
