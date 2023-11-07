@@ -4,8 +4,10 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import lombok.ToString;
 
 @Entity
+@ToString(callSuper = true)
 public class Person extends AbstractPersistable<Long> {
 
 	@Column(unique = true)
